@@ -146,7 +146,7 @@ function displayNextTextSection() {
   if (currentSectionIndex < textSections.length) {
     timedTextDiv.innerText = textSections[currentSectionIndex];
     currentSectionIndex++;
-    setTimeout(displayNextTextSection, 700); // Change text every 3 seconds
+    setTimeout(displayNextTextSection, 1200); // Change text every 3 seconds
   } else {
     // Show the button after all text sections have been displayed
     timedTextDiv.classList.add("hidden")
@@ -176,7 +176,7 @@ runModelButton.addEventListener("click", async () => {
   const messages = [
     {
       role: "system",
-      content: ` Give me a random task to do, that can be finished in 1-5 Minutes. The task has to be set in the close environment. The user is feeling ${information[0]} today, so choose the task according to his mood (if he/she is anxious choose a claming task for him/her etc.). Make it very random, so that you would normally not think about doing a task like this. Make it slightly playful and creative, as if a child came up with the idea. Make it still mindful so that the user feels good about completing the task. Make it realistic, so that the user is able to successfully complete the task. Just give out the task with no context or extra information, like saying that you are about to give the user a task. You can use the examples as well. Make up a differnt task each time. Include a fitting emoji.
+      content: ` Give me a random task to do, that can be finished in 1-5 Minutes. The task has to be set in the close environment. The user is feeling ${information[0]} today, so make the match his mood . Make it very random, so that you would normally not think about doing a task like this. Make it slightly playful and creative, as if a child came up with the idea. Make it still mindful so that the user feels good about completing the task. Make it realistic, so that the user is able to successfully complete the task. Just give out the task with no context or extra information, like saying that you are about to give the user a task. You can use the examples as well. Make up a differnt task each time. Include a fitting emoji.
       
       
       **Examples:** <Write a short poem about the last noise you heard. . Call the first person in your contacts. Hug a tree or a living being. Use household items to create a fun obstacle course in your living room.
