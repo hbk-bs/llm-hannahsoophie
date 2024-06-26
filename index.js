@@ -146,7 +146,7 @@ function displayNextTextSection() {
   if (currentSectionIndex < textSections.length) {
     timedTextDiv.innerText = textSections[currentSectionIndex];
     currentSectionIndex++;
-    setTimeout(displayNextTextSection, 1200); // Change text every 3 seconds
+    setTimeout(displayNextTextSection, 1900); // Change text every 3 seconds
   } else {
     // Show the button after all text sections have been displayed
     timedTextDiv.classList.add("hidden")
